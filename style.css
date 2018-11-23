@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
+@import url("https://fonts.googleapis.com/css?family=Parisienne");
+.swiper-container .swiper-wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .foto {
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  color: #eee;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.25);
+  font-family: "Parisienne", cursive;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .title {
+  font-size: 100px;
+  font-weight: 400;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.content .data-casamento {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.content .contagem-regressiva {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Cutive Mono", monospace;
+  font-size: 40px;
+}
+
+.content .contagem-regressiva .dia {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+.content .contagem-regressiva .dia span {
+  letter-spacing: 10px;
+}
+
+.content .contagem-regressiva .horario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+}
+
+.content .contagem-regressiva .horario div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+.content .contagem-regressiva .horario div:last-child {
+  margin: 0;
+}
+
+.content .contagem-regressiva .horario p {
+  font-size: 20px;
+}
+
+.content .contagem-regressiva .horario .hora::after,
+.content .contagem-regressiva .horario .minuto::after {
+  content: ":";
+  position: absolute;
+  right: -20px;
+  top: -5px;
+}
+
+.content .footer {
+  position: absolute;
+  bottom: 30px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono"); // Counter
+@import url("https://fonts.googleapis.com/css?family=Parisienne"); // Default
+
+// Variaveis
+$fontDefault: "Parisienne", cursive;
+$fontCounter: "Cutive Mono", monospace;
+$sombra: rgba(0, 0, 0, 0.25);
+
+.swiper-container {
+  .swiper-wrapper {
+    width: 100vw;
+    height: 100vh;
+
+    .swiper-slide {
+      .foto {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+* {
+  margin: 0;
+  color: #eee;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  // overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: $sombra;
+  font-family: $fontDefault;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    font-size: 100px;
+    font-weight: 400;
+    text-shadow: 2px 2px 8px $sombra;
+  }
+
+  .data-casamento {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .contagem-regressiva {
+    display: flex;
+    font-family: $fontCounter;
+    font-size: 40px;
+
+    .dia {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 30px;
+
+      span {
+        letter-spacing: 10px;
+      }
+    }
+
+    .horario {
+      display: flex;
+      margin-left: 20px;
+
+      div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .hora::after,
+      .minuto::after {
+        content: ":";
+        position: absolute;
+        right: -20px;
+        top: -5px;
+      }
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 30px;
+  }
+}
