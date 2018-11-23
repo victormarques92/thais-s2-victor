@@ -5,6 +5,7 @@
 $fontDefault: "Parisienne", cursive;
 $fontCounter: "Cutive Mono", monospace;
 $sombra: rgba(0, 0, 0, 0.25);
+$color: #eee;
 
 .swiper-container {
   .swiper-wrapper {
@@ -13,7 +14,8 @@ $sombra: rgba(0, 0, 0, 0.25);
 
     .swiper-slide {
       .foto {
-        max-width: 100%;
+        width: 100vw;
+        height: 100vh;
       }
     }
   }
@@ -21,7 +23,7 @@ $sombra: rgba(0, 0, 0, 0.25);
 
 * {
   margin: 0;
-  color: #eee;
+  color: $color;
 }
 
 body {
@@ -30,14 +32,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 .content {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: $sombra;
   font-family: $fontDefault;
@@ -45,67 +47,67 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   .title {
-    font-size: 100px;
+    font-size: 10vw;
     font-weight: 400;
     text-shadow: 2px 2px 8px $sombra;
   }
 
   .data-casamento {
-    font-size: 30px;
+    font-size: 3vw;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 2vh;
   }
 
   .contagem-regressiva {
     display: flex;
     font-family: $fontCounter;
-    font-size: 40px;
+    font-size: 4vw;
 
     .dia {
       position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-right: 30px;
+      margin-right: 3vw;
 
       span {
-        letter-spacing: 10px;
+        letter-spacing: 1vw;
+      }
+
+      p {
+        font-size: 2vw;
       }
     }
 
     .horario {
       display: flex;
-      margin-left: 20px;
+      margin-left: 2vw;
 
       div {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: 30px;
+        margin-right: 3vw;
         &:last-child {
           margin: 0;
         }
       }
 
       p {
-        font-size: 20px;
+        font-size: 2vw;
       }
 
       .hora::after,
       .minuto::after {
         content: ":";
         position: absolute;
-        right: -20px;
-        top: -5px;
+        right: -2vw;
+        top: -0.5vh;
       }
     }
-  }
-
-  .footer {
-    position: absolute;
-    bottom: 30px;
   }
 }

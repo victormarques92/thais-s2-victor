@@ -6,7 +6,8 @@
 }
 
 .swiper-container .swiper-wrapper .swiper-slide .foto {
-  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 * {
@@ -29,13 +30,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .content {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.25);
   font-family: "Parisienne", cursive;
@@ -49,18 +51,22 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .content .title {
-  font-size: 100px;
+  font-size: 10vw;
   font-weight: 400;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .content .data-casamento {
-  font-size: 30px;
+  font-size: 3vw;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2vh;
 }
 
 .content .contagem-regressiva {
@@ -68,7 +74,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-family: "Cutive Mono", monospace;
-  font-size: 40px;
+  font-size: 4vw;
 }
 
 .content .contagem-regressiva .dia {
@@ -83,18 +89,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 30px;
+  margin-right: 3vw;
 }
 
 .content .contagem-regressiva .dia span {
-  letter-spacing: 10px;
+  letter-spacing: 1vw;
+}
+
+.content .contagem-regressiva .dia p {
+  font-size: 2vw;
 }
 
 .content .contagem-regressiva .horario {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 20px;
+  margin-left: 2vw;
 }
 
 .content .contagem-regressiva .horario div {
@@ -109,7 +119,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 30px;
+  margin-right: 3vw;
 }
 
 .content .contagem-regressiva .horario div:last-child {
@@ -117,19 +127,14 @@ body {
 }
 
 .content .contagem-regressiva .horario p {
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 .content .contagem-regressiva .horario .hora::after,
 .content .contagem-regressiva .horario .minuto::after {
   content: ":";
   position: absolute;
-  right: -20px;
-  top: -5px;
-}
-
-.content .footer {
-  position: absolute;
-  bottom: 30px;
+  right: -2vw;
+  top: -0.5vh;
 }
 /*# sourceMappingURL=style.css.map */

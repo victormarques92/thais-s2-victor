@@ -1,6 +1,8 @@
 var galeria = [
     { foto: './image/foto-01.jpg' },
-    { foto: './image/foto-02.jpg' }
+    { foto: './image/foto-02.jpg' },
+    { foto: './image/foto-03.jpg' },
+    { foto: './image/foto-04.jpg' }
 ];
 
 var swiperContainer = $('.swiper-container');
